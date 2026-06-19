@@ -5,6 +5,7 @@ Ce projet utilise la vision par ordinateur (YOLO) pour automatiser l'analyse tac
 ---
 
 ## 🚀 Fonctionnalités
+En cours
 <!-- * **Détection en direct :** Tracking du filet, du volant et distinction automatique entre le `Joueur 1` (premier plan) et le `Joueur 2` (fond de court).
 * **Calibration par Homographie :** Système graphique par clics pour corriger l'écrasement 3D de la caméra.
 * **Rapport Tactique :** Export d'un graphique Matplotlib (`.png`) aux dimensions officielles de la BWF (Fédération Internationale de Badminton).
