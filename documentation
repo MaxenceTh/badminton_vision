@@ -1,0 +1,30 @@
+Documentation:
+
+- Spécifications du Dataset & Entraînement (Roboflow / Colab)
+L'intelligence du système repose sur un modèle de détection d'objets sur mesure (Custom YOLO), entraîné à l'aide de ressources cloud.
+
+2.1 Structuration des Données
+Le dataset a été annoté et préparé sur la plateforme Roboflow, en adaptant une base de données existante. Le modèle gère l'environnement via 4 classes distinctes :
+
+Class 0: Net : Le filet de badminton (utilisé comme repère visuel fixe).
+
+Class 1: Player1 : Le joueur situé sur le demi-terrain inférieur (proche caméra).
+
+Class 2: Player2 : Le joueur situé sur le demi-terrain supérieur (fond de court).
+
+Class 3: Shuttlecock : Le volant (utilisé pour les analyses de trajectoires d'échanges).
+
+- Entraînement (Google Colab)
+L'apprentissage a été effectué sur Google Colab en exploitant un GPU NVIDIA T4.
+
+Framework : ultralytics (YOLOv8/YOLOv11)
+
+Output : Exportation des poids optimisés dans le fichier binaire modele/best.pt.
+
+- Implémentation Logicielle (Inférence Locale)
+L'application s'exécute localement et exploite la puissance du GPU pour garantir une fluidité d'affichage stable par rapport aux FPS de la vidéo d'origine.
+
+3.1 Dépendances requises
+Le projet s'appuie sur trois piliers de l'écosystème Python Data Science (environnement virtuel dédie "env_badminton' avec Python 3.12.7):
+python -m venv env_badminton
+pip install ultralytics opencv-python numpy matplotlib

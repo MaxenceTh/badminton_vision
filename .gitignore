@@ -1,0 +1,29 @@
+# --- Environnement Virtuel Python ---
+# On ne commit JAMAIS l'environnement virtuel (il contient des milliers de fichiers locaux)
+env_badminton/
+venv/
+__pycache__/
+*.pyc
+
+# --- Fichiers de données lourds / Médias ---
+# Les vidéos et les images générées sont trop lourdes pour Git
+Video/*.mp4
+Video/*.png
+Video/*.jpg
+*.mp4
+*.png
+*.jpg
+
+
+# --- Fichiers d'analyse / Logs ---
+# Tu peux aussi ignorer les fichiers textes de coordonnées si tu ne veux pas les suivre
+coordonnees_match.txt
+
+# --- Fichiers système ou d'éditeurs ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Dossiers personnels / Recherches ---
+recherche/
+runs/detect/predict/*.avi
